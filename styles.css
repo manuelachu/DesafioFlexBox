@@ -1,16 +1,16 @@
-.main-container {
+.contenedor-principal {
     display: flex;
     height: 100vh;
 }
 
-.contacts-column {
+.columna-contactos {
     flex: 0 0 30%;
     background-color: #f0f2f5;
     display: flex;
     flex-direction: column;
 }
 
-.main-section {
+.seccion-principal {
     flex: 1;
     background-color: #e5ddd5;
     display: flex;
@@ -20,19 +20,19 @@
     text-align: center;
 }
 
-.main-section h1 {
+.seccion-principal h1 {
     font-size: 2.5em;
     color: #444;
     margin-bottom: 10px;
 }
 
-.main-section img {
+.seccion-principal img {
     max-width: 350px;
     height: auto;
     margin-bottom: 20px;
 }
 
-.user-status {
+.estado-usuario {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,47 +41,47 @@
     border-bottom: 1px solid #ddd;
 }
 
-.user-info {
+.info-usuario {
     display: flex;
     align-items: center;
 }
 
-.user-status img {
+.estado-usuario img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.user-name-status {
+.nombre-estado-usuario {
     display: flex;
     flex-direction: column;
     margin-right: auto;
 }
 
-.user-name-status h3 {
+.nombre-estado-usuario h3 {
     margin: 0;
     font-size: 1em;
 }
 
-.status-text {
+.texto-estado {
     margin: 0;
     font-size: 0.8em;
     color: #25d366;
 }
 
-.user-icons {
+.iconos-usuario {
     display: flex;
     gap: 15px;
 }
 
-.icon {
+.icono {
     font-size: 24px;
     cursor: pointer;
     color: #888;
 }
 
-.new-chat-button-container {
+.contenedor-boton-nuevo-chat {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@
     border-bottom: 1px solid #ddd;
 }
 
-.new-chat-button {
+.boton-nuevo-chat {
     padding: 10px 20px;
     border: none;
     background-color: #007bff;
@@ -98,13 +98,13 @@
     cursor: pointer;
 }
 
-.contacts-list {
+.lista-contactos {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
 }
 
-.contact {
+.contacto {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -112,56 +112,54 @@
     border-bottom: 1px solid #e0e0e0;
 }
 
-.contact img {
+.contacto img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
 }
 
-.contact-info {
+.info-contacto {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.contact-info h4 {
+.info-contacto h4 {
     margin: 0 0 5px 0;
 }
 
-.last-message {
+.ultimo-mensaje {
     color: #888;
     font-size: 0.9em;
     margin: 0;
 }
 
 @media (max-width: 600px) {
-
-    .contacts-column {
+    .columna-contactos {
         flex: 1 1 100%;
         max-width: 100%;
     }
 
-    .main-section {
+    .seccion-principal {
         display: none;
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-
-    .contacts-column {
+    .columna-contactos {
         flex: 0 0 40%;
     }
 
-    .main-section {
+    .seccion-principal {
         flex: 1;
     }
     
-    .main-section img {
+    .seccion-principal img {
         max-width: 250px;
     }
 
-    .main-section h1 {
+    .seccion-principal h1 {
         font-size: 2em;
     }
 }
